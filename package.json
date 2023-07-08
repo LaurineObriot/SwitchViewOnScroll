@@ -1,0 +1,28 @@
+{
+	"name": "SwitchViewOnScroll",
+	"version": "1.0.0",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"description": "",
+	"scripts": {
+		"start": "parcel src/index.html --open",
+		"clean": "rm -rf dist/*",
+		"build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
+		"build": "npm run clean && npm run build:parcel"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/laurineobriot/SwitchViewOnScroll.git"
+	},
+	"keywords": [],
+	"author": "Laurine Obriot",
+	"license": "MIT",
+	"homepage": "https://laurineobriot.com",
+	"devDependencies": {
+		"parcel": "^2.7.0"
+	},
+	"dependencies": {
+		"@studio-freight/lenis": "^0.2.8",
+		"gsap": "^3.11.2",
+		"imagesloaded": "^5.0.0"
+	}
+}
